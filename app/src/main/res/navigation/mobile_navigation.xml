@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.newsapp.ui.bbc.HomeFragment"
+        android:label="@string/bbc"
+
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_skyNewsFragment"
+            app:destination="@id/skyNewsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.newsapp.ui.gallery.GalleryFragment"
+        android:label="@string/aljzeera"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.newsapp.ui.slideshow.SlideshowFragment"
+        android:label="@string/cnn"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/foxNewsFragment"
+        android:name="com.example.newsapp.Fragment.foxNewsFragment"
+        android:label="fox"
+        tools:layout="@layout/fragment_fox_news" />
+    <fragment
+        android:id="@+id/skyNewsFragment"
+        android:name="com.example.newsapp.Fragment.SkyNewaFragment"
+        android:label="Sky News"
+        tools:layout="@layout/fragment_sky_newa" />
+</navigation>
